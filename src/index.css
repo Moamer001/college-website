@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  html {
+    font-family: "Tajawal", sans-serif;
+    scroll-behavior: smooth;
+  }
+}
+.text-gradient {
+  background: linear-gradient(96deg, #285091 11.46%, #4e8bf1 91.65%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+@layer components {
+  .menu-item {
+    @apply text-[1rem] font-normal text-blue-600 relative cursor-pointer after:content-[''] after:w-full after:h-[3px] after:bg-blue-600 after:absolute after:left-0 after:-bottom-2 after:rounded after:translate-x-11 after:opacity-0 after:transition-all after:hover:translate-x-0 after:hover:opacity-100;
+  }
+}
