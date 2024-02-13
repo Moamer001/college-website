@@ -12,7 +12,7 @@ const Navbar = () => {
     return (
         <>
             {isMenuOpen && <MobileNavbar setIsMenuOpen={setIsMenuOpen} />}
-            <div className="bg-gray-100  px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48 ">
+            <div className="h-24 z-50 w-full fixed bg-gray-100   sm:px-8 md:px-12 lg:px-20 xl:px-48 ">
                 <nav className="max-w-screen-xl mx-auto py-4 px-6">
                     <div className="flex items-center justify-between ">
                         <img

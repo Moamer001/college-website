@@ -19,7 +19,7 @@ const textVariants = {
 
 const Hero = () => {
     return (
-        <div className='h-[calc(100vh-6rem)] flex lg:flex-row-reverse flex-col px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48 ' id="main">
+        <div className='h-screen flex lg:flex-row-reverse flex-col px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48 ' id="main">
             {/* IMAGE CONTAINER */}
             <div className='h-1/2 lg:h-full lg:w-1/2 relative   flex justify-center items-center'>
                 <img src={HeroIMG} alt="Logo Hero" className=' object-contain w-full h-full' />
